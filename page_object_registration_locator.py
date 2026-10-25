@@ -25,9 +25,10 @@ class LoginPageAround:
 
     # El método hace clic en el botón Registrarse
     def click_registration_button(self):
-        ...
+        self.driver.find_element(*self.registration_button).click()
 
     # El método valida el texto en el botón Registrarse
     def check_text_registration_button(self):
         registration_button_text = ...
-        assert ...
+        assert registration_button_text == "Registrarse"
+
